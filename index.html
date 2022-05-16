@@ -1,0 +1,79 @@
+<!-- 
+We gave the name index.html as it is default first page by any vrowser when we load a website
+Thus we start from here only first (equivalent to int main() of C++)-->
+
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Books to read</h1>
+    <p>There are a lot of books to read for you!</p>
+    <a href="https://www.youtube.com/watch?v=BsDoLVMnmZs" target="_blank">Video link</a> <!--This is a attribute tag-->
+    <br>
+    <!-- This <a href="<WEBSITE_LINK>">"What to show on the place of link"</a> is used to add links to your html file-->
+    <a href="https://www.codingninjas.com/"target="_blank">CN</a>
+    <br>
+    <!-- This is a absolute link -->
+    <a href="t2.basics.html" target="_blank">t2</a>
+    <!-- This is a relative link -->
+    <hr>
+    <h2>Second imp</h2>
+    <h3>Third imp</h3>
+    <h4>Fourth imp</h4>    
+    <h5>Fifth imp</h5>
+    <h6>Sixth imp</h6> 
+    <!-- Not only size decrease here but importance for any Search engine or bot will also be based on heading importance -->
+    <!-- Dont use h1 to h6 for make text thick or bold and for only importance of headings -->
+    <!-- In VS code you can type Lorem<n> to get n random words generated-->
+    <p>Lorem ipsum dolor sit amet.</p> <!--Done by using lorem5-->
+
+    <hr>
+    <!-- Image tage -->
+    <img src="https://images.unsplash.com/photo-1548113616-32c0de183d17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="Red planet" width="120px"><br>
+    <!-- alt basically is for alterate to show if image dont loads -->
+    <!-- You can also change the width and height using width taga nd height tag -->
+    <!-- Although its preferred to do this using CSS -->
+    
+    <hr>
+    <!-- Bold, italic and underlined tags  -->
+    <b>This is bold</b><br>
+    <i>This is italic</i><br>
+    <u>Underlined</u><br>
+
+    <hr>
+    <!-- You can also have big or small tags for getting work done -->
+    <big>This is big</big><br>
+    <small>This is small</small><br>
+    
+    <hr>
+    <!-- <hr> this tag is used for getting a horizontal line in page -->
+    
+    <!-- subscript and superscript -->
+    <p>CO<sub>2</sub></p> <!--used as <sub></sub> -->
+    <p>C + O<sub>2</sub> &rarr; CO<sub>2</sub></p>
+    <!-- We can use different sybmols like arrow withbtheir html codes from internet.  -->
+    <p>ax<sup>2</sup>+bx+c</p><br> <!--used as <sup></sup> -->
+    
+    <hr>
+    <!-- pre tag gets you the data as typed in file and render it as it is-->
+    <p>This is the basic C++ boiler plate: </p>
+    <pre>
+#include<iostream>
+using namespace std;
+int main(){
+
+    return 0;}   
+    </pre>
+</body>
+
+</html>
+
+<!-- To open the attribute link in another tab you have to use target="_blank" to <a href=" " target="_blank"> -->
+<!-- To add images to our website -->

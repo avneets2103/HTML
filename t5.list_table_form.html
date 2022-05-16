@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 5</title>
+</head>
+
+<body>
+    <header>This tutorial have lists, tables and forms</header>
+    <main>
+        <!-- Embedding another website in yr page -->
+        <!-- we use iframe tag -->
+        <iframe height="315px" src="https://learn-anything.xyz/" frameborder="0" allow="scroll">This is yt video</iframe>
+        <iframe width="560px" height="315px" src="https://www.youtube.com/embed/BsDoLVMnmZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.codingninjas.com/" height="315px" frameborder="20"></iframe>
+        <!-- You can use attributes for videos from google bro -->
+        
+        <!-- ul starnds for unordered list -->
+        <!-- li stands for list item -->
+        <hr>
+        <!-- You can also use the type of bulletin you want here by using type="" -->
+        <!-- Althugh its preferred to have this type of changes using css -->
+        <ul type="circle">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+
+        <!-- ol stands for ordered list -->
+        <ol type="i">
+            <li>Data1</li>
+            <li>Data2</li>
+            <li>Data3</li>
+        </ol>
+        <hr>
+
+        <div>
+            <table>
+                <caption>Max scores of players in games</caption>
+                <!-- You must prefer dividing this table div into thead and tfoof too as when using css it becomes easy to access specific data. -->
+                <thead>
+                    <!-- Row wise data addition -->
+                    <!-- Use caption tag to add a heading to the table -->
+                    <tr>
+                        <!-- tr is used for table row display -->
+                        <!-- td is used for table data display -->
+                        <!-- th is used fot deisplayig table headers-->
+                        <th>S.no</th>
+                        <th>PLayer name</th>
+                        <!-- <th>Max score</th> -->
+                        <th colspan="2">Game</th>
+                        <!-- colspan is used for merging 2 columns under the same heading -->
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Avneet</td>
+                        <td>23</td>
+                        <td>Cricket</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Gargie</td>
+                        <td>45</td>
+                        <td>FAUG</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <hr>
+        <div>
+            <!-- action = "where_to_store_data" -->
+            <!-- for different types of input just google search man -->
+            <form action="form.php">
+                <!-- Elements like: -->
+                <input type="text" placeholder="Enter name here"><br>
+
+                <!-- Labels are used if we want to do checkbox or radio using places other than the main locations like a word -->
+                <!-- id,class are useful for future as it is used while we use css -->
+                <label for="section_id_A">
+                    <input type="radio" value="Section A" name="sec" id="section_id_A">Sec A
+                </label>
+                <label for="section_id_B">
+                    <input type="radio" value="Section B" name="sec" id="section_id_B">Seb B
+                </label><br>
+
+                <label for="house Red">
+                    <input type="radio" value="RED" name="house" id="house Red" class="Red">Red
+                </label>
+                <label for="house blue">
+                    <input type="radio" value="BLUE" name="house" id="house blue" class="Red">Blue
+                </label>
+                <label for="house Green">
+                    <input type="radio" value="GREEN" name="house" id="house Green" class="Red">Green
+                </label>
+                <label for="house Yellor">
+                    <input type="radio" value="YELLOW" name="house" id="hosue Yellow" class="Red">Yellow
+                </label><br>
+                
+                <input type="checkbox" name="Want food canteen card?" id="foodcanteen" class="Red">
+                <label for="foodcanteen">WANT FOOD CANTEEN CARD</label>
+                
+                <br><input type="date">
+
+                <br><input type="email" placeholder="Enter email"><br>
+
+                <label for="profile_pic">Upload profile pic</label>
+                <br><input type="file" id="profile_pic" name="profile_pic" accept=".jpg,.jpeg,.pdf"><br>
+                
+                <input type="range"><br>
+
+                <textarea name="Explain" id="explain" cols="30" rows="10" placeholder="Explain why you wanna join"></textarea><br>
+                
+                <select name="car" id="car">Select your car
+                    <option value="omni">Omni</option>
+                    <option value="bmw">BMW</option>
+                    <option value="Alto">Alto</option>
+                </select>
+
+                <input type="submit"><br>
+
+            </form>
+        </div>
+    </main>
+    <hr>
+    <footer>Move to next tutorial now</footer>
+</body>
+
+</html>

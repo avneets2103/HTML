@@ -1,0 +1,47 @@
+<!-- 
+q1. Code a html page with video embedded insite it.
+q2. Replace the video with a youtube video.
+q3. Create a HTML form for a travel website to a vacation.
+q4. Create a table displaying score of cricket players in a match using HTML.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivaago</title>
+</head>
+<body>
+    <header>
+        <big><b>Welcome to Trivaago</b></big>
+    </header>
+    <main>
+    <div>
+        <iframe width="1000" height="730" src="https://www.youtube.com/embed/6OKpYyuhQ8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+    </div>
+    <div>
+        <form action="travel_details.php">
+            <input type="text" placeholder="Enter name"><br><br>
+            <a href="prices.html">Know about packages and Price list</a><br><br>
+            <select name="Locations" id="location">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Leh">Leh</option>
+                <option value="Himachal">Himachal</option>
+            </select><br>
+        <label for="food">
+            <input type="checkbox" value="food" name="food" id="food">Include food too <br>
+        </label><br>
+            <input type="number" placeholder="Number of days"><br>
+            <p>Enter your initial date</p>
+            <input type="date"><br><br>
+            <input type="number" placeholder="Enter number of tickets"><br>
+        </form>
+    </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
